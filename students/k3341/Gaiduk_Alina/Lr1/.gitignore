@@ -1,30 +1,33 @@
-# Python cache and bytecode
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Virtual environments
-.venv/
-venv/
-env/
-ENV/
-
-# Test and tooling caches
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
+.idea
+.ipynb_checkpoints
+.mypy_cache
+.vscode
+__pycache__
+.pytest_cache
+htmlcov
+dist
+site
 .coverage
-htmlcov/
+coverage.xml
+.netlify
+test.db
+log.txt
+Pipfile.lock
+env3.*
+env
+docs_build
+site_build
+venv
+docs.zip
+archive.zip
 
-# IDE/editor settings
-.idea/
-.vscode/
+# vim temporary files
+*~
+.*.sw?
+.cache
 
-# Local databases
-*.db
-*.sqlite
-*.sqlite3
-
-# OS files
+# macOS
 .DS_Store
-Thumbs.db
+
+
+.env
