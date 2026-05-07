@@ -1,0 +1,25 @@
+﻿site_name: ITMO WebDev Lab Reports
+site_description: Отчеты по лабораторным работам
+site_author: Alina Gaiduk
+
+theme:
+  name: material
+  language: ru
+
+nav:
+  - Главная: index.md
+  - Лабораторная 1:
+      - Обзор: lr1.md
+      - API: api.md
+      - Модели и БД: models_db.md
+      - Выполнение практик: practices.md
+      - GitHub ссылки: github_links.md
+  - Лабораторная 2:
+      - Потоки, процессы и асинхронность: lr2.md
+
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+  - fenced_code
+  - admonition
