@@ -16,6 +16,8 @@
         <link rel="prev" href="../github_links/">
       
       
+        <link rel="next" href="../lr3/">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
@@ -477,15 +479,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Структура реализации
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       Задача 1. Подсчет суммы
@@ -496,7 +489,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       Общая идея
     </span>
@@ -565,7 +558,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       Общая идея
     </span>
@@ -574,7 +567,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       База данных
     </span>
@@ -642,7 +635,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       Итоговый вывод
     </span>
@@ -654,6 +647,74 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Лабораторная 3
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Лабораторная 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lr3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Docker, источники данных и очереди
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -702,15 +763,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Структура реализации
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       Задача 1. Подсчет суммы
@@ -721,7 +773,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       Общая идея
     </span>
@@ -790,7 +842,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       Общая идея
     </span>
@@ -799,7 +851,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       База данных
     </span>
@@ -867,7 +919,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       Итоговый вывод
     </span>
@@ -893,35 +945,14 @@
 
 <h1 id="2">Лабораторная работа 2: Потоки, процессы и асинхронность<a class="headerlink" href="#2" title="Permanent link">&para;</a></h1>
 <h2 id="_1">Цель работы<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Цель лабораторной работы - разобраться в отличиях между потоками, процессами и асинхронным выполнением в Python, а также сравнить эти подходы на вычислительной задаче и на задаче сетевого парсинга.</p>
+<p>Разобраться в отличиях между потоками, процессами и асинхронным выполнением в Python, а также сравнить эти подходы на вычислительной задаче и на задаче сетевого парсинга.</p>
 <p>В работе реализованы две задачи:</p>
 <ol>
 <li>Подсчет суммы чисел от <code>1</code> до <code>10_000_000_000_000</code> с использованием <code>threading</code>, <code>multiprocessing</code> и <code>asyncio</code>.</li>
 <li>Параллельный парсинг HTML-страниц с сохранением заголовков страниц в базу данных.</li>
 </ol>
-<h2 id="_2">Структура реализации<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<pre><code class="language-text">Lr2/
-  task.md
-  task1/
-    threading_sum.py
-    multiprocessing_sum.py
-    async_sum.py
-    README.md
-  task2/
-    common.py
-    threading_parser.py
-    multiprocessing_parser.py
-    async_parser.py
-    requirements.txt
-    lr1_parsed_pages.db
-    sample_pages/
-      page1.html
-      page2.html
-      page3.html
-    README.md
-</code></pre>
 <h2 id="1">Задача 1. Подсчет суммы<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<h3 id="_3">Общая идея<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="_2">Общая идея<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p>Каждая программа считает сумму всех чисел от <code>1</code> до <code>10_000_000_000_000</code>. Диапазон разбивается на несколько частей, каждая часть обрабатывается отдельной параллельной задачей, после чего частичные суммы складываются.</p>
 <p>Прямой перебор чисел циклом до <code>10_000_000_000_000</code> занял бы неприемлемо много времени, поэтому в каждой подзадаче используется формула суммы арифметической прогрессии:</p>
 <pre><code class="language-text">(start + end) * count / 2
@@ -1002,7 +1033,7 @@
 <p>На данном вычислении быстрее всего выглядят <code>threading</code> и <code>asyncio</code>, потому что подзадачи используют формулу O(1) и почти не нагружают CPU. <code>multiprocessing</code> оказался медленнее из-за накладных расходов на запуск процессов.</p>
 <p>Если заменить формулу тяжелым циклическим вычислением, <code>multiprocessing</code> обычно будет масштабироваться лучше, потому что процессы могут реально выполняться на разных ядрах. <code>threading</code> и <code>asyncio</code> в CPU-bound сценариях будут ограничены одним интерпретатором и GIL.</p>
 <h2 id="2_1">Задача 2. Параллельный парсинг страниц<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h2>
-<h3 id="_4">Общая идея<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h3 id="_3">Общая идея<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>Во второй задаче реализованы три программы для параллельного парсинга веб-страниц:</p>
 <ul>
 <li><code>threading_parser.py</code>;</li>
@@ -1017,7 +1048,7 @@
 <li>Печатает результат на экран.</li>
 </ol>
 <p>Для воспроизводимой проверки добавлены локальные HTML-страницы в <code>task2/sample_pages</code>. Это позволяет проверить программы без зависимости от доступности внешних сайтов.</p>
-<h3 id="_5">База данных<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h3 id="_4">База данных<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>В лабораторной работе 1 была реализована система управления задачами. Поэтому результат парсинга сохраняется в модель предметной области ЛР1: заголовок HTML-страницы записывается как задача в таблицу <code>tasks</code>.</p>
 <p>Для удобного запуска без поднятого PostgreSQL используется SQLite-база <code>lr1_parsed_pages.db</code>. Она содержит таблицы:</p>
 <table>
@@ -1160,7 +1191,7 @@
 <p>На локальном тесте быстрее всего сработал <code>asyncio + aiohttp</code>. Это ожидаемо для I/O-bound задач: асинхронный цикл событий эффективно переключается между сетевыми операциями без создания нескольких процессов.</p>
 <p><code>threading</code> также показал хороший результат, потому что потоки подходят для ожидания сетевых ответов. Для небольшого числа URL его проще использовать, чем <code>asyncio</code>.</p>
 <p><code>multiprocessing</code> оказался самым медленным на этом тесте из-за накладных расходов на запуск процессов и межпроцессное взаимодействие. Этот подход имеет смысл, если парсинг включает тяжелую обработку HTML, вычисления или ML-обработку после загрузки страниц.</p>
-<h2 id="_6">Итоговый вывод<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h2 id="_5">Итоговый вывод<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>В лабораторной работе были реализованы все требуемые подходы:</p>
 <table>
 <thead>

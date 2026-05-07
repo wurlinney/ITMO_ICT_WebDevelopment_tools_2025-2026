@@ -16,6 +16,8 @@ nav:
       - GitHub ссылки: github_links.md
   - Лабораторная 2:
       - Потоки, процессы и асинхронность: lr2.md
+  - Лабораторная 3:
+      - Docker, источники данных и очереди: lr3.md
 
 markdown_extensions:
   - tables

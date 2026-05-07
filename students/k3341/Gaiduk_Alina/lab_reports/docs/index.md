@@ -10,3 +10,4 @@
 
 - [Лабораторная работа 1](lr1.md): FastAPI Time Manager.
 - [Лабораторная работа 2](lr2.md): Потоки, процессы и асинхронность в Python.
+- [Лабораторная работа 3](lr3.md): Docker, FastAPI, parser-сервис, Redis и Celery.
